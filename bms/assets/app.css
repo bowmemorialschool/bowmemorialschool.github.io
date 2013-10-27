@@ -2374,11 +2374,18 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
 body {
   margin: 0 auto;
   max-width: 1200px;
-  padding: 0; }
+  padding: 0;
+  font-family: georgia, times, serif;
+  color: #1a1a1a;
+  font-size: 18px;
+  line-height: 1.5; }
+  body li {
+    line-height: 1.5; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto Condensed', sans-serif;
-  line-height: 1; }
+  line-height: 1;
+  margin: 0.5em 0; }
 
 nav ul {
   margin: 0; }
@@ -2422,6 +2429,9 @@ body > header {
   display: inline-block; }
 
 @media (max-width: 700px) {
+  body {
+    font-size: 16px; }
+
   #nav-chrome {
     height: auto;
     overflow: auto; }
@@ -2523,6 +2533,13 @@ body > footer .wildcat {
 #homepage .memorial-messenger li {
   list-style-type: none; }
   #homepage .memorial-messenger li a:link, #homepage .memorial-messenger li a:visited, #homepage .memorial-messenger li a:hover, #homepage .memorial-messenger li a:active {
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 1;
+    font-size: 24.5px;
+    /* h3 size from bootstrap */
+    font-weight: bold;
+    padding: 0.25em 0;
+    display: inline-block;
     color: #c00; }
 
 @media (max-width: 500px) {
@@ -2604,13 +2621,25 @@ address li {
   padding-right: 1em; }
 
 #directory th {
-  text-align: left;
-  padding-top: 1em; }
+  font-family: 'Roboto Condensed', sans-serif;
+  line-height: 1;
+  padding: 0.5em 0;
+  font-size: 31.5px;
+  /* bootstrap size for h2 */
+  text-align: left; }
 
-@media (max-width: 700px) {
-  #directory .email {
-    text-align: left;
-    display: block; } }
+@media (max-width: 500px) {
+  #directory {
+    border-spacing: 0; }
+
+  #directory tr {
+    display: block;
+    margin: 0 0 0.5em; }
+
+  #directory td {
+    display: block;
+    margin: 0;
+    padding: 0; } }
 /* HONOR ROLL */
 .grade-level-honor-roll {
   display: inline-block; }
