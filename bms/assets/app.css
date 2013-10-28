@@ -2371,6 +2371,47 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
+/*
+    Colorbox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto; -webkit-overflow-scrolling: touch;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none; -ms-interpolation-mode:bicubic;}
+.cboxIframe{width:100%; height:100%; display:block; border:0;}
+#colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
+
+/* 
+    Change the following styles to modify the appearance of Colorbox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay{background:#fff;}
+#colorbox{outline:0;}
+#cboxContent{background:#fff; overflow:hidden;}
+.cboxIframe{background:#fff;}
+#cboxError{padding:50px; border:1px solid #ccc;}
+#cboxLoadedContent{margin-bottom:20px;}
+
+/* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
+#cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; width:auto; background:none; }
+
+/* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
+#cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
+
+#cboxSlideshow{position:absolute; bottom:0px; right:42px; color:#444;}
+#cboxPrevious{position:absolute; bottom:0px; left:0; color:#444;}
+#cboxNext{position:absolute; bottom:0px; left:63px; color:#444;}
+#cboxClose{position:absolute; bottom:0; right:0; display:block; color:#444;}
+
+html {
+  background: papayawhip; }
+
 body {
   margin: 0 auto;
   max-width: 1200px;
@@ -2394,10 +2435,11 @@ nav li {
   list-style-type: none; }
 
 /* HEADER */
-body > header {
+header {
   margin-bottom: 2.5%;
   text-align: right;
-  overflow: auto; }
+  overflow: auto;
+  background: #c00; }
 
 #nav-chrome {
   background: papayawhip;
@@ -2491,19 +2533,20 @@ main.with-sidebar {
     display: block;
     width: 100%; } }
 /* FOOTER */
-body > footer {
+footer {
   clear: both;
   margin: 0 2.5%;
   padding-top: 1em;
   border-top: 1px solid #c00;
   margin-top: 2.5%;
+  padding-bottom: 1em;
   font-size: 85.714285714%;
   /*12px*/
   padding-right: 65px;
   /* for wildcat */
   text-align: center; }
 
-body > footer .wildcat {
+footer .wildcat {
   float: right;
   margin: -34px -65px 0 0; }
 
@@ -2674,3 +2717,12 @@ article.messenger {
 .magazine-credit dt, .magazine-credit dd {
   display: inline;
   margin: 0; }
+
+/* PHOTO GALLERY */
+.gallery {
+  overflow: auto; }
+
+.gallery a {
+  display: block;
+  float: left;
+  margin: 0 2px 2px 0; }
