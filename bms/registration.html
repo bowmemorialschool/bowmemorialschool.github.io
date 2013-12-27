@@ -6,51 +6,50 @@
     <title>New Student Registration</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/bms/assets/favicon.ico">
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Open+Sans:400,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/bms/assets/app.css">
     <script src="/bms/assets/vendor/modernizr.js"></script>
   </head>
   
   <body>
     
-    <header>
+    <header id="mast">
       
-      <div id="nav-chrome">
+      <div class="constraint">
         
-        <h1>
-          <a href="/bms/index.html">
-            <img src="/bms/assets/bow-memorial-school.png" alt="Bow Memorial School">
-          </a>
-        </h1>
+        <div id="nav-chrome">
+          <h1>
+            <a href="/bms/index.html"></a>
+          </h1>
+          <a href="#" id="mobile-nav-toggle"></a>
+        </div>
         
-        <a href="#" id="mobile-nav-toggle"></a>
+        <nav>
+          <ul>
+            <li><a href="/bms/">Home</a></li>
+            <li><a href="/bms/memorial-messenger">Messenger</a></li>
+            <li><a href="/bms/directory.html">Directory</a></li>
+          </ul>
+        </nav>
         
       </div>
       
-      <nav id="main-nav">
-        <ul>
-          <li><a href="/bms/memorial-messenger">Memorial Messenger</a></li>
-          <li><a href="/bms/administration.html">Administration</a></li>
-          <li><a href="/bms/directory.html">Directory</a></li>
-        </ul>
-      </nav>
-      
     </header>
     
-    <div class="padding-wrapper">
-      
-      <main>
+    <main class="container">
   <h1>New Student Registration</h1>
+  <p>Below you will find the forms required to register your child at Bow Memorial School. In order for a registration to be processed, all documents must be completed and turned into the BMS office. You may bring in or mail your documents to:</p>
 
-<p>Below you will find the forms required to register your child at Bow Memorial School. In order for a registration to be processed, all documents must be completed and turned into the BMS office. You may bring in or mail your documents to:</p>
+<p>Bow Memorial School<br />
+20 Bow Center Road<br />
+Bow, NH 03304</p>
 
-<p>Bow Memorial School<br /> 20 Bow Center Road<br /> Bow, NH 03304</p>
+<h2 id="registration-checklist">Registration Checklist</h2>
 
-<h2 id='registration_checklist'>Registration Checklist</h2>
 <ul>
-  <li>Completed <a href='/bms/assets/bms-registration-form.pdf'>registration form</a></li>
+  <li>Completed <a href="/bms/assets/bms-registration-form.pdf">registration form</a></li>
   <li>Copy of birth certificate</li>
-  <li>Completed and signed <a href='/bms/assets/residency-declaration.pdf'>residency declaration form</a></li>
+  <li>Completed and signed <a href="/bms/assets/residency-declaration.pdf">residency declaration form</a></li>
   <li>
     Proof of residency. Requires two of the following documents:
     <ul>
@@ -64,8 +63,6 @@
 
 </main>
 
-      
-    </div>
     
     <footer>
       <img src="/bms/assets/bow-memorial-school-wildcat.gif" class="wildcat">

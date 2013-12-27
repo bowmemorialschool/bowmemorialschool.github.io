@@ -2409,16 +2409,113 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
 #cboxNext{position:absolute; bottom:0px; left:63px; color:#444;}
 #cboxClose{position:absolute; bottom:0; right:0; display:block; color:#444;}
 
-html {
-  background: papayawhip; }
+#mast {
+  background: #c00;
+  color: #fff;
+  margin-bottom: 2.5%;
+  text-align: right; }
+  #mast h1 {
+    float: left;
+    margin-left: 2.5%; }
+  #mast nav {
+    margin-right: 2.5%; }
+  #mast li {
+    display: inline;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.875em;
+    font-weight: 300;
+    margin-left: 1em;
+    line-height: 3;
+    letter-spacing: 0.07142857143em; }
+  #mast li a:link, #mast li a:visited, #mast li a:hover, #mast li a:active {
+    color: #fff; }
+
+.constraint {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+#nav-chrome {
+  height: 0; }
+
+#mobile-nav-toggle {
+  display: none;
+  width: 25px;
+  height: 19px;
+  margin-right: 2.5%;
+  background-image: -webkit-linear-gradient(white 71.42857%, transparent 71.42857%, transparent);
+  background-image: -moz-linear-gradient(white 71.42857%, transparent 71.42857%, transparent);
+  background-image: -ms-linear-gradient(white 71.42857%, transparent 71.42857%, transparent);
+  background-image: -o-linear-gradient(white 71.42857%, transparent 71.42857%, transparent);
+  -webkit-background-size: 100% 7px;
+  -moz-background-size: 100% 7px;
+  background-size: 100% 7px; }
+
+@media (max-width: 700px) {
+  #nav-chrome {
+    height: auto;
+    overflow: auto; }
+
+  #mast nav {
+    display: none;
+    text-align: left;
+    margin: 0; }
+
+  #mast li {
+    display: block;
+    margin: 0; }
+
+  #mast nav.visible {
+    display: block; }
+
+  #mobile-nav-toggle {
+    display: inline-block; }
+
+  #mast nav a {
+    display: block;
+    background: #333;
+    padding-left: 2.5%;
+    border-bottom: 1px solid #666; } }
+article {
+  overflow: auto; }
+
+.post-traverse, .pagination {
+  clear: left;
+  margin: 3em 0 0;
+  overflow: auto; }
+  .post-traverse li, .pagination li {
+    display: inline-block;
+    padding-bottom: 2.5%; }
+  .post-traverse a:link, .post-traverse a:visited, .post-traverse a:hover, .post-traverse a:active, .pagination a:link, .pagination a:visited, .pagination a:hover, .pagination a:active {
+    background: #333;
+    color: #fff;
+    padding: 0.25em 0.5em;
+    display: inline-block; }
+
+/* when shown on the messenger page*/
+.messenger .gallery {
+  display: block; }
+
+.read-more {
+  clear: left;
+  margin-top: 1em; }
+  .read-more a:link, .read-more a:visited, .read-more a:hover, .read-more a:active {
+    background: #333;
+    color: #fff;
+    padding: 0.25em 0.5em;
+    display: inline-block; }
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
 body {
-  margin: 0 auto;
-  max-width: 1200px;
+  margin: 0;
   padding: 0;
   font-family: georgia, times, serif;
   color: #1a1a1a;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5; }
   body li {
     line-height: 1.5; }
@@ -2434,70 +2531,15 @@ nav ul {
 nav li {
   list-style-type: none; }
 
-/* HEADER */
-header {
-  margin-bottom: 2.5%;
-  text-align: right;
-  overflow: auto;
-  background: #c00; }
-
-#nav-chrome {
-  background: papayawhip;
-  height: 0; }
-
-#nav-chrome h1 {
-  float: left;
-  margin-left: 2.5%; }
-
-#mobile-nav-toggle {
-  display: none;
-  width: 50px;
-  height: 50px;
-  background: yellow; }
-
-#main-nav {
-  margin-top: 1em;
-  margin-right: 2.5%;
-  font-family: 'Roboto Condensed', sans-serif; }
-
-#main-nav li {
-  display: inline; }
-
-#main-nav a {
-  background: black;
-  color: white;
-  line-height: 1.5;
-  padding: 0 1em;
-  display: inline-block; }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2.5%;
+  overflow: auto; }
 
 @media (max-width: 700px) {
   body {
-    font-size: 16px; }
-
-  #nav-chrome {
-    height: auto;
-    overflow: auto; }
-
-  #nav-chrome h1 {
-    width: 250px; }
-
-  #main-nav {
-    display: none;
-    text-align: left;
-    margin: 0; }
-
-  #main-nav.visible {
-    display: block; }
-
-  #mobile-nav-toggle {
-    display: inline-block; }
-
-  #main-nav a {
-    display: block;
-    background: #333;
-    padding: 2.5%;
-    color: white;
-    border-bottom: 1px solid #666; } }
+    font-size: 16px; } }
 /* MAIN SECTION, SIDEBAR */
 .padding-wrapper {
   padding: 0 2.5%; }
@@ -2699,7 +2741,8 @@ address li {
 
 /* POSTS */
 time {
-  display: block; }
+  display: block;
+  margin-bottom: 1em; }
 
 /* MEMORIAL MESSENGER */
 article.messenger {

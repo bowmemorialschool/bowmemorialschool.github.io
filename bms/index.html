@@ -6,46 +6,51 @@
     <title>Bow Memorial School</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/bms/assets/favicon.ico">
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Open+Sans:400,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/bms/assets/app.css">
     <script src="/bms/assets/vendor/modernizr.js"></script>
   </head>
   
   <body>
     
-    <header>
+    <header id="mast">
       
-      <div id="nav-chrome">
+      <div class="constraint">
         
-        <h1>
-          <a href="/bms/index.html">
-            <img src="/bms/assets/bow-memorial-school.png" alt="Bow Memorial School">
-          </a>
-        </h1>
+        <div id="nav-chrome">
+          <h1>
+            <a href="/bms/index.html"></a>
+          </h1>
+          <a href="#" id="mobile-nav-toggle"></a>
+        </div>
         
-        <a href="#" id="mobile-nav-toggle"></a>
+        <nav>
+          <ul>
+            <li><a href="/bms/">Home</a></li>
+            <li><a href="/bms/memorial-messenger">Messenger</a></li>
+            <li><a href="/bms/directory.html">Directory</a></li>
+          </ul>
+        </nav>
         
       </div>
       
-      <nav id="main-nav">
-        <ul>
-          <li><a href="/bms/memorial-messenger">Memorial Messenger</a></li>
-          <li><a href="/bms/administration.html">Administration</a></li>
-          <li><a href="/bms/directory.html">Directory</a></li>
-        </ul>
-      </nav>
-      
     </header>
     
-    <div class="padding-wrapper">
-      
-      <main class="with-sidebar" id="homepage">
+    <main class="with-sidebar" id="homepage">
   
   <section>
     
     <img src="/bms/assets/bow-memorial-school-building.jpg" class="bms-building">
     
     <ul class="memorial-messenger">
+      
+        <li>
+          <a href="/bms/2013/11/23/quarter-1-honor-roll.html">Quarter 1 Honor Roll</a>
+        </li>
+      
+        <li>
+          <a href="/bms/2013/10/30/new-bms-website-launched.html">New BMS Website Launched</a>
+        </li>
       
         <li>
           <a href="/bms/2013/10/25/red-ribbon-week-dress-red-day.html">Photos: Red Ribbon Week Dress Red Day</a>
@@ -55,16 +60,9 @@
           <a href="/bms/2013/10/25/autumnfest.html">Photos: Autumnfest</a>
         </li>
       
-        <li>
-          <a href="/bms/2013/10/23/presidential-oaks.html">Photos: Presidential Oaks</a>
-        </li>
-      
-        <li>
-          <a href="/bms/2013/10/02/xc-meet-at-three-rivers.html">Photos: XC Meet at Three Rivers</a>
-        </li>
-      
     </ul>
-    <a href="/bms/memorial-messenger">View all Memorial Messenger news</a>
+    <a href="/bms/memorial-messenger">View all Memorial Messenger news</a><br>
+    <a href="http://www.bownet.org/bmsadmin/default.html">BMS Administrative Weekly Updates</a>
     
   </section>
   
@@ -229,8 +227,6 @@
   </nav>
 </section>
 
-      
-    </div>
     
     <footer>
       <img src="/bms/assets/bow-memorial-school-wildcat.gif" class="wildcat">

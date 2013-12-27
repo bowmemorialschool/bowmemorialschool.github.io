@@ -25,7 +25,7 @@ u[o]&&(delete u[o],c?delete n[l]:typeof n.removeAttribute!==i?n.removeAttribute(
     };
     return $(function() {
       $("#mobile-nav-toggle").click(function() {
-        $("#main-nav").toggleClass('visible');
+        $("#mast nav").toggleClass('visible');
         return false;
       });
       $("[rel='colorbox']").colorbox({
