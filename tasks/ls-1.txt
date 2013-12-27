@@ -1,0 +1,5 @@
+total 24
+-rw-r--r--@ 1 jhall  staff  1236 Dec 22 14:58 deploy
+-rwx------@ 1 jhall  staff    22 Dec 27 01:18 hello.sh
+-rw-r--r--  1 jhall  staff     0 Dec 27 09:26 ls-1.txt
+-rw-r--r--@ 1 jhall  staff    16 Dec 22 14:55 say_hi
